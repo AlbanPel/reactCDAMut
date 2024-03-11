@@ -48,6 +48,7 @@ export default function App() {
                     onClick={() => {setOpenDialog(true); setLvl('expert')}}
                 >Expert
                 </Button>
+                {openDialog &&<RandomMath open={true} onClose={()=>setOpenDialog(false)} lvl={lvl} />}
             </Container>
         </ThemeProvider>
     );
